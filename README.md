@@ -1,7 +1,18 @@
-# u1r2b_k5m2b
+# Black Friday Sales Analysis
 
-CPSC 340 term project for u1r2b and k5m2b.
+This project is developed with Li Wang. 
+We got Black Friday sales data from Kaggle and it made
+537577 observations for customer behaviours on Black Friday in a retail store. We
+developed different methods to predict customer age and the kinds of products that
+customers will purchase. The performance of the selected models are relatively
+good.
 
+Here is the [Code for prediction](code) and the [data analytics report](report.pdf).
 
-* This is the [Project Report](report.pdf).
-* For prediction, this is the [Code](code). 
+* Data Visualization
+We first tried to visualize data by compressing data using PCA. The PCA variance of the first two components
+are 9.99997580e-01 and 1.72858695e-06. We also tried dimensional ISOMAP and KNN. But non of them is a great indicator of the data.
+* Data prediction
+According to related works and the characteristics of the data, we chose to predict customer age and the kinds of product that customers will purchase.
+We tried several different models including decision tree, random forest, logistic regression, polynomial kernel, Gaussian kernel and softmax. 
+According to the results, we chose decision tree for both predictions. 
